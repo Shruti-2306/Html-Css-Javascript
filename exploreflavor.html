@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXPLORE OUR FLAVORS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('flavorbackground.jpg');
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(5px); /* Add a slight blur effect */
+    }
+    .container-fluid {
+      padding: 20px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 36px;
+        color: rgb(12, 12, 12); /* Change color for better visibility */
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+        font-weight: bolder; /* Make it bolder */
+      }
+    .row {
+      display: flex;
+      justify-content: space-around;
+    }
+    .col {
+      flex: 0 0 30%; /* Set width to 30% */
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .flavour-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 7px solid white; /* Add white border */
+      transition: transform 0.3s ease;
+    }
+
+    .flavour-img:hover {
+        transform: scale(1.1); /* Scale the image on hover */
+      }
+
+    .flavour-name {
+        position: absolute;
+        bottom: -15px; /* Adjust position below the image */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px 10px;
+        border-radius: 20px; /* Rounded corners */
+        font-weight: bold; /* Make the font bold */
+        color: black; /* Change color for better visibility */
+      }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h2>EXPLORE OUR FLAVORS</h2>
+    <div class="row">
+      <div class="col">
+        <img src="imgf1.jpg" alt="Flavour 1" class="flavour-img">
+        <div class="flavour-name">Vanilla</div>
+      </div>
+      <div class="col">
+        <img src="imgf2.jpg" alt="Flavour 2" class="flavour-img">
+        <div class="flavour-name">Chocolate</div>
+      </div>
+      <div class="col">
+        <img src="imgf3.jpg" alt="Flavour 3" class="flavour-img">
+        <div class="flavour-name">Strawberry</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="imgf4.jpg" alt="Flavour 4" class="flavour-img">
+        <div class="flavour-name">Mint Chocolate Chip</div>
+      </div>
+      <div class="col">
+        <img src="imgf5.jpg" alt="Flavour 5" class="flavour-img">
+        <div class="flavour-name">Cookie Dough</div>
+      </div>
+      <div class="col">
+        <img src="imgf6.jpg" alt="Flavour 6" class="flavour-img">
+        <div class="flavour-name">Rocky Road</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

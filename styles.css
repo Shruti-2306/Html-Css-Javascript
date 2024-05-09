@@ -1,0 +1,143 @@
+/* CSS styles for the e-commerce website */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('shopbackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+   
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #af9797;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Shop page styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+
+.product {
+    border: 10px solid #ccc;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    margin-top: 0;
+}
+
+/* Cart page styles */
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.cart-item {
+    width: 30%;
+    border: 10px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+.cart-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    max-width: 100%;
+}
+
+.cart-item h4 {
+    margin-top: 0;
+}
+
+.cart-item p {
+    margin-bottom: 0;
+}
+
+.cart-item button {
+    margin-top: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #cc0000;
+}
+
+/* Cart summary styles */
+.cart-summary {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.proceed-to-buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.proceed-to-buy-btn:hover {
+    background-color: #45a049;
+}
+
+.total-cost {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
